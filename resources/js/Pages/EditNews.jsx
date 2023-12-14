@@ -66,7 +66,7 @@ export default function EditNews({ auth, myNews }) {
             />
             <input
               type='text'
-              placeholder='Categori'
+              placeholder='Category'
               className='m-2 input input-bordered w-full'
               ref={categoryRef}
               defaultValue={myNews.category}
@@ -81,42 +81,5 @@ export default function EditNews({ auth, myNews }) {
         </div>
       </div>
     </AuthenticatedLayout>
-    // <div className='min-h-screen bg-slate-50'>
-    //   <Head title={title} />
-    //   <Navbar user={auth.user} />
-
-    //   <div className='card w-full lg:w-96 bg-base-100 shadow-xl m-2'>
-    //     <div className='p-4 text-2xl'>Edit News</div>
-    //     <div className='card-body'>
-    //       <input
-    //         type='text'
-    //         placeholder='Title'
-    //         className='m-2 input input-bordered w-full'
-    //         ref={titleRef}
-    //         defaultValue={myNews.title}
-    //       />
-    //       <input
-    //         type='text'
-    //         placeholder='Description'
-    //         className='m-2 input input-bordered w-full'
-    //         ref={descriptionRef}
-    //         defaultValue={myNews.description}
-    //       />
-    //       <input
-    //         type='text'
-    //         placeholder='Categori'
-    //         className='m-2 input input-bordered w-full'
-    //         ref={categoryRef}
-    //         defaultValue={myNews.category}
-    //       />
-    //       <button
-    //         className='btn btn-primary m-2'
-    //         onClick={handleSubmit}
-    //       >
-    //         Edit
-    //       </button>
-    //     </div>
-    //   </div>
-    // </div>
   );
 }
